@@ -12,5 +12,6 @@ RUN git init
 RUN git clone https://github.com/MickChristie/opensource3
 
 EXPOSE 8080
-CMD ["uvicorn", "main:app1", "--reload"]
+CMD ["uvicorn", "main:app1", "--reload","--port","8080"]
+
 
