@@ -9,5 +9,8 @@ RUN pip install fastapi
 RUN pip install uvicorn
 
 RUN git init
+RUN git clone https://github.com/MickChristie/opensource3
 
-CMD ["uvicorn","main:app","--reload","port=8080"]
+EXPOSE 8080
+CMD ["uvicorn", "main:app1", "--reload", "port=8080"]
+
